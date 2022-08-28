@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class ReactAppThemeOne extends React.Component {
   handleClick(e) {
     console.log('Running React App Theme 1');
-    // alert('Running React App 1');
+    alert('Running React App 1: [REACT BASED PLUGIN]');
   }
 
   render() {

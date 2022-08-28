@@ -33,3 +33,4 @@ include plugin_dir_path(__FILE__) . 'includes/cyberize-scripts.php';
 
 // Removing & Replacing Default Welcome Widgets
 include plugin_dir_path(__FILE__) . 'includes/jlight-shortcode.php';
+include plugin_dir_path(__FILE__) . 'includes/react-router-app-shortcode.php';

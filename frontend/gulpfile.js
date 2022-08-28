@@ -8,12 +8,15 @@ var rename = require('gulp-rename');
 var scss = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
+// var postcss = require('gulp-postcss');
 var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 var buffer = require('vinyl-buffer');
-var uglify = require('gulp-uglify');
-
+// var uglify = require('gulp-uglify'); // THIS DOESN'T WORK WITH REACT
+var reactify = require('reactify');
+var streamify = require('gulp-streamify');
+const uglify = require('gulp-terser');
 /**
  *
  * Gulp SCSS Variables
@@ -35,13 +38,13 @@ function styles(done) {
     .pipe(
       scss({
         errorLogToConsole: true,
-        outputStyle: 'compressed'
+        outputStyle: 'compressed',
       })
     )
     .on('error', console.error.bind(console))
     .pipe(
       autoprefixer({
-        overrideBrowserslist: ['last 2 versions', '> 5%', 'Firefox ESR']
+        overrideBrowserslist: ['last 2 versions', '> 5%', 'Firefox ESR'],
       })
     )
     .pipe(rename({ suffix: '.min' }))
@@ -76,11 +79,11 @@ var jsFILES = [jsSRC];
  */
 
 function js(done) {
-  jsFILES.map(function(singleJSFile) {
+  jsFILES.map(function (singleJSFile) {
     return browserify({
-      entries: [jsFolder + singleJSFile]
+      entries: [jsFolder + singleJSFile],
     })
-      .transform(babelify, { presets: ['@babel/preset-env'] })
+      .transform([babelify, reactify], { presets: ['@babel/preset-env'] })
       .bundle()
       .pipe(source(singleJSFile))
       .pipe(rename({ extname: '.min.js' }))

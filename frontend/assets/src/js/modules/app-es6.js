@@ -4,8 +4,9 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 import ReactAppThemeOne from './react/ReactAppThemeOne';
-// import ReactAppThemeTwo from './_modules/react/ReactAppThemeTwo';
-// import ReactWpApp1 from './_modules/react/ReactWpApp1';
+import ReactWpApp1 from './react/ReactWpApp1';
+
+import VanillaJavascriptTest from './VanillaJavascriptTest';
 
 class App {
   constructor() {
@@ -15,16 +16,15 @@ class App {
     if (appThemeOne) {
       ReactDOM.render(<ReactAppThemeOne />, appThemeOne);
     }
-    // LUNCHING REACT APP THEME TWO
-    // const appThemeTwo = document.getElementById('app-theme-2');
-    // if (appThemeTwo) {
-    //   ReactDOM.render(<ReactAppThemeTwo />, appThemeTwo);
-    // }
-    // LUNCHING REACT WP APP 1
-    //   const reactWpApp1 = document.getElementById('react-wp-app-1');
-    //   if (reactWpApp1) {
-    //     ReactDOM.render(<ReactWpApp1 />, reactWpApp1);
-    //   }
+
+    // LUNCHING REACT ROUTER APP
+    const reactWpApp1 = document.getElementById('REACT-ROUTER-APP');
+    if (reactWpApp1) {
+      ReactDOM.render(<ReactWpApp1 />, reactWpApp1);
+    }
+
+    // VENILLA JAVASCRIPT OR JQUERY
+    new VanillaJavascriptTest();
   }
 }
 
