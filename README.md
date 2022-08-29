@@ -30,6 +30,20 @@ They're there just to prove that the Browser Router is working.
 
 ### jQuery 3.6.0
 
+## Frontend JS and Styling (scss)
+
+1. Go to the frontend folder using command prompt
+2. run: npm install
+3. run: gulp watch
+4. start coding ...
+
+## Admin JS and Styling (scss)
+
+1. Go to the admin folder using command prompt
+2. run: npm install
+3. run: gulp watch
+4. start coding ...
+
 ## Special Changes
 
 The gulp.js file was re-written with reactify. The normal uglify wasn't working with React.
