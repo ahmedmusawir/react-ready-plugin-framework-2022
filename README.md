@@ -34,3 +34,6 @@ They're there just to prove that the Browser Router is working.
 
 The gulp.js file was re-written with reactify. The normal uglify wasn't working with React.
 uglify.js will work with normal Javascript/jQuery.
+
+Also, the vanilla js has a click event on the body, so that will generate a console log message which
+needs to be removed.
