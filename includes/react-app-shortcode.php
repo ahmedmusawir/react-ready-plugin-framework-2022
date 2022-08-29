@@ -38,7 +38,7 @@
 <main class="JLIGHT-CAFE-SHORTCODE d-flex justify-content-<?php echo $align; ?>">
 
   <?php
-   include plugin_dir_path(__FILE__) . 'views/jlight-view.php';
+   include plugin_dir_path(__FILE__) . 'views/react-app-view.php';
    ?>
 
 </main>

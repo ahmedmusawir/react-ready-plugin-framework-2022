@@ -3,19 +3,19 @@ import { Link, NavLink } from 'react-router-dom';
 
 function MainNavbar(props) {
   return (
-    <nav className="navbar navbar-expand-sm navbar-light bg-warning">
+    <nav className="navbar navbar-expand-lg navbar-light bg-warning">
       <section className="container">
         <a className="navbar-brand" href="#">
           React Node WPAPI
         </a>
 
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            {/* <li className="nav-item">
+          <ul className="navbar-nav mt-4">
+            <li className="nav-item">
               <NavLink to={'/add-post'} className="nav-link">
                 Add Post
               </NavLink>
-            </li> */}
+            </li>
             <li className="nav-item">
               <NavLink to={'/ajax-one'} className="nav-link">
                 Ajax One
