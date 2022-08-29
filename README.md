@@ -4,9 +4,9 @@ Rebuilding the moose plugin framework with REACT Babble etc. on Aug 28, 2022
 
 # Details:
 
-## Download and Install the plugin
+1. Download and Install the plugin
 
-## Create 2 WP Pages or a Thrive Pages and use the following shortcodes
+2. Create 2 WP Pages or a Thrive Pages and use the following shortcodes
 
 ### [react_plugin_app_1]
 
