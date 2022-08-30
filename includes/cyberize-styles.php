@@ -1,10 +1,13 @@
 <?php
-// REPLACE THE FOLLOWING CONSTANT WHEN STARTING A NEW PLUGIN
+// RENAME THE FOLLOWING CONSTANTS WHEN STARTING A NEW PLUGIN
 // REACT_READY_FRAMEWORK_URL
+// BACKEND_STYLE_ID
+// FRONTEND_STYLE_ID
+
 // ALSO UPDATE THE FOLLOWING PREFIX WHEN STARTING A NEW PLUGIN
 $PREFIX = 'MOOSE';
-define('BACKEND_STYLE_ID', $PREFIX . '_backend');
-define('FRONTEND_STYLE_ID', $PREFIX . '_frontend');
+define('BACKEND_STYLE_ID', $PREFIX . '-backend');
+define('FRONTEND_STYLE_ID', $PREFIX . '-frontend');
 
 // Conditionally load CSS on plugin settings pages only
 add_action('admin_enqueue_scripts', function ($hook) {
