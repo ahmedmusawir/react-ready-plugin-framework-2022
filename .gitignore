@@ -80,7 +80,8 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# INCLUDING THE DIST FOLDER CUZ THIS IS A WP PLUGIN
+# dist
 
 # Gatsby files
 .cache/
