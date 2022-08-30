@@ -3,12 +3,10 @@
 =============================*/
 @import 'global';
 @import 'custom';
-// body {
-//   display: none;
-// }
 
 #REACT-PLUGIN-APP {
-  height: 400px;
+  min-height: 400px;
   width: 100%;
-  border: 1rem dotted red;
+  border: 5px dotted blue;
+  padding: 1rem;
 }

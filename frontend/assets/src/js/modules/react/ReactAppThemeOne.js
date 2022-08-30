@@ -8,9 +8,9 @@ class ReactAppThemeOne extends React.Component {
 
   render() {
     return (
-      <div className="app-content container">
+      <div className="app-content">
         <h1 className="jumbotron">React App Theme 1 Works!</h1>
-        <article>
+        <div>
           <h3>This is coming from OOP PHP theme</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
@@ -21,7 +21,7 @@ class ReactAppThemeOne extends React.Component {
           <button className="btn btn-danger" onClick={this.handleClick}>
             Click Works!
           </button>
-        </article>
+        </div>
       </div>
     );
   }
